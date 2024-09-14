@@ -5,7 +5,7 @@ import {Link} from 'expo-router'
 export default function ExerciseListItem({item}){
     return(
       {/* aschild renders the child component (View)*/}, 
-      <Link href={'/exercise'} asChild> 
+      <Link href={`/${item.name}`} asChild> 
       <Pressable style={styles.exerciseContainer}>
         <Text style= {styles.exerciseName}>{item.name}</Text>
         <Text style={styles.exerciseSubtitle}>
